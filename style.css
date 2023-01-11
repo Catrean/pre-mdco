@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    font-size: 23px;
+    font-style: normal;
+}
+
+.main-nav {
+    border-bottom: 2px solid black;
+}
+
+.nav a:hover {
+    background-color: #fdffb6;
+    border-radius: 20%;
+}
+
+.main-header {
+    text-align: center;
+    padding-bottom: 20x;
+    background-color: white;
+}
+
+.img-mcdo {
+    width: 100px;
+}
+
+.ourfood {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.menu-section {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.foods,
+.breakfast,
+.burgers,
+.ckn,
+.dd,
+.ff {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.breakfast:hover,
+.burgers:hover,
+.ckn:hover,
+.dd:hover,
+.ff:hover {
+    transform: scale(1.05);
+}
+
+.breakfast:active,
+.burgers:active,
+.ckn:active,
+.dd:active,
+.ff:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.breakfast,
+.burgers,
+.ckn,
+.dd,
+.ff {
+    border-radius: 30%;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+    margin: 20px;
+}
+
+.back {
+    text-decoration: none;
+}
+
+button>svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+
+button:hover>svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+}
+
+button:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+}
+
+.section-bf,
+.section-fries {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 190px;
+    height: 50%;
+    padding: .8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card-img {
+    height: 40%;
+    width: 92px;
+    border-radius: .5rem;
+    transition: .3s ease;
+}
+
+.card-info {
+    padding-top: 10%;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+
+/*Text*/
+
+.text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.text-body {
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+
+
+/*Button*/
+
+.card-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+
+
+/*Hover*/
+
+.card-img:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+
+.card-button:hover {
+    border: 1px solid #ffcaa6;
+    background-color: #ffcaa6;
+}
+
+.img-mufin,
+.img-frays {
+    border-radius: .5em;
+    width: 92px;
+    display: cover;
+}
